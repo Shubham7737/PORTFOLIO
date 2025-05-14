@@ -33,7 +33,7 @@ export default function Home() {
         </p>
 
         {/* CV Button */}
-        <a href="./Shubham_Cv.pdf" download>
+        <a href="./Shubh_CV.pdf" download>
           <button className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">
             Download CV
           </button>
