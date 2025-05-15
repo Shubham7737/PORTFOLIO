@@ -5,7 +5,24 @@ export default function Home() {
   const [showButton, setShowButton] = useState(false);
   const navigate = useNavigate();
 
-  // Show Scroll-to-Top Button
+  const [text, setText] = useState('');
+  const str = "Hi, I'm Shubham";
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (index < str.length) {
+        setText((prev) => prev + str[index]);
+        setIndex((prev) => prev + 1);
+      } else {
+        setText('');
+        setIndex(0);
+      }
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [index]);
+
   const handleScroll = () => {
     setShowButton(window.scrollY > 200);
   };
@@ -20,13 +37,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative bg-zinc-950 text-white min-h-screen flex flex-col justify-center items-center px-4">
+    <div className="relative bg-gradient-to-br from-sky-900 to-indigo-950 text-white h-[80vh] flex flex-col justify-center items-center px-4">
       {/* Home Section */}
-      <section id="HOME" className="w-full max-w-4xl text-center py-20">
-        <h1
-          className="text-4xl md:text-5xl font-extrabold mb-4 animate__animated animate__fadeIn"
-        >
-          Hello, I'm <span className="text-blue-500">Shubham</span>
+      <section id="HOME" className="w-full max-w-4xl text-center py-16">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 animate__animated animate__fadeIn">
+          <span className="text-blue-400">{text}</span>
         </h1>
         <p className="text-xl text-gray-300 animate__animated animate__fadeIn animate__delay-1s">
           A passionate Front-end Developer building responsive web experiences.
