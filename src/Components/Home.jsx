@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import shubhamCV from "../assets/shubhamCV.pdf";
+
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
   const navigate = useNavigate();
@@ -48,7 +50,7 @@ export default function Home() {
         </p>
 
         {/* CV Button */}
-        <a href="./Shubh_CV.pdf" download>
+        <a href={shubhamCV} download>
           <button className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">
             Download CV
           </button>
