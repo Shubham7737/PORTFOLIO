@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Shubh_CV from "../assets/Shubh_CV.pdf"
+import Shubh_CV from "../assets/Shubh_CV.pdf";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
   const navigate = useNavigate();
 
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const str = "Hi, I'm Shubham";
   const [index, setIndex] = useState(0);
 
@@ -16,7 +16,7 @@ export default function Home() {
         setText((prev) => prev + str[index]);
         setIndex((prev) => prev + 1);
       } else {
-        setText('');
+        setText("");
         setIndex(0);
       }
     }, 500);
@@ -38,12 +38,21 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative bg-gradient-to-br from-sky-900 to-indigo-950 text-white h-[80vh] flex flex-col justify-center items-center px-4">
+    <div
+      className="relative bg-gradient-to-br from-sky-900 to-indigo-950 text-white 
+  h-[70vh] sm:h-[60vh] md:h-[80vh] 
+  flex flex-col justify-center items-center px-2 sm:px-4"
+    >
       {/* Home Section */}
       <section id="HOME" className="w-full max-w-4xl text-center py-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 animate__animated animate__fadeIn">
+        {/* Fix: Set min-h on h1 to prevent layout shift */}
+        <h1
+          className="text-4xl md:text-5xl font-extrabold mb-4 animate__animated animate__fadeIn"
+          style={{ minHeight: "3.5rem" }} // Adjust according to font size, 3.5rem ~ line height of 4xl text
+        >
           <span className="text-blue-400">{text}</span>
         </h1>
+
         <p className="text-xl text-gray-300 animate__animated animate__fadeIn animate__delay-1s">
           A passionate Front-end Developer building responsive web experiences.
         </p>
