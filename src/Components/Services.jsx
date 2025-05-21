@@ -3,13 +3,13 @@ import React from 'react';
 const arr = [
   {
     video: 'https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4',
-    title: 'Frontend Developer',
-    des: 'The Calculator App provides an easy-to-use, web-based calculator that performs basic arithmetic operations.'
+    title: 'Responsive Website Design',
+    des: 'Design and develop fully responsive websites using modern HTML, CSS, and JavaScript to ensure seamless experience across all devices.'
   },
   {
     video: 'https://videos.pexels.com/video-files/18069232/18069232-uhd_2560_1440_24fps.mp4',
-    title: 'UI/UX Designer',
-    des: 'The Calculator App provides an easy-to-use, web-based calculator that performs basic arithmetic operations.'
+    title: 'React Web App Development',
+    des: 'Build dynamic and high-performance single-page applications (SPAs) using React.js with clean architecture and reusable components.'
   },
 ];
 
