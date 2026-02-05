@@ -5,6 +5,7 @@ import { FaBootstrap, FaJava, FaJsSquare } from "react-icons/fa";
 import { IoLogoCss3, IoLogoHtml5, IoLogoNodejs, IoLogoReact } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
 
 const skills = [
   { icon: <BiLogoCPlusPlus />, label: "C++", color: "text-blue-500" },
@@ -15,7 +16,7 @@ const skills = [
   { icon: <IoLogoNodejs />, label: "NodeJS", color: "text-green-600" },
   { icon: <SiMongodb />, label: "MongoDB", color: "text-green-500" },
   { icon: <IoLogoReact />, label: "React", color: "text-blue-400" },
-  { icon: <FaBootstrap />, label: "Bootstrap", color: "text-purple-600" },
+  { icon: <SiMysql />, label: "MySql", color: "text-purple-600" },
   { icon: <RiTailwindCssFill />, label: "Tailwind", color: "text-teal-400" },
 ];
 
