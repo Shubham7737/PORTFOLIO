@@ -8,14 +8,13 @@ import Services from './Services'
 
 function Body() {
   return (
-    <div className='bg-zinc-950'>
+    <div className='bg-white text-gray-900'>
       <Home />
-      <About />
-      <Skill />
+      {/* <About /> */}
+      <Services />
+      {/* <Skill /> */}
        {/* <Projects /> */}
-       {/* <Services /> */}
        <Contact />
-
     </div>
   )
 }

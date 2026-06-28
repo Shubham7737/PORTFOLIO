@@ -14,11 +14,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-zinc-950 text-white shadow-lg relative z-50">
+    <nav className="bg-white text-gray-900 shadow-md relative z-50">
       <div className="container mx-auto flex justify-between items-center px-4 py-4">
         {/* Brand */}
         <div>
-          <h1 className="text-2xl font-extrabold text-blue-500 z-50">Shubham</h1>
+          <h1 className="text-2xl font-extrabold text-blue-600 z-50">Shubham</h1>
         </div>
 
         {/* Desktop Nav */}
@@ -27,7 +27,7 @@ export default function Navbar() {
             <Link
               key={i}
               to={link.path}
-              className="text-white hover:text-blue-400 transition duration-300"
+              className="text-gray-700 hover:text-blue-600 font-medium transition duration-300"
             >
               {link.label}
             </Link>
@@ -36,7 +36,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <div className="lg:hidden z-50">
-          <button onClick={toggleMenu} className="text-white text-2xl">
+          <button onClick={toggleMenu} className="text-gray-900 text-2xl">
             {isMenuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
 
       {/* Mobile Menu with Animation */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out bg-zinc-900 px-4 z-40 shadow-md 
+        className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out bg-gray-50 px-4 z-40 border-b border-gray-200 
         ${isMenuOpen ? 'max-h-96 py-6' : 'max-h-0 py-0'}`}
       >
         <div className="flex flex-col space-y-4">
@@ -52,7 +52,7 @@ export default function Navbar() {
             <Link
               key={i}
               to={link.path}
-              className="text-white hover:text-blue-400 transition duration-300"
+              className="text-gray-800 font-medium hover:text-blue-600 transition duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.label}
