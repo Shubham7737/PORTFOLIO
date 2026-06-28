@@ -75,8 +75,9 @@ export default function Home() {
           transition={{ delay: 1, duration: 1 }}
           className="text-lg md:text-2xl text-slate-600 max-w-2xl mx-auto leading-relaxed"
         >
-          A <span className="text-slate-800 font-bold">Full Stack Developer</span> specialized in building 
-          high-performance backend systems with <span className="text-blue-600 font-semibold">Node.js & MySQL</span>.
+          <span className="text-slate-800 font-bold">Travel Technology Solutions</span><br/>
+          Building Enterprise Hotel Booking Platforms, B2B Travel Portals &amp; Travel Management Systems.<br/>
+          Helping Hotels, Travel Agencies and Hospitality Businesses automate bookings, manage operations and grow online with scalable travel technology.
         </motion.p>
 
         {/* Action Buttons */}
@@ -86,16 +87,6 @@ export default function Home() {
           transition={{ delay: 1.5 }}
           className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <a href={Shubh_CV} download>
-            <motion.button 
-              whileHover={{ scale: 1.05, y: -5 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-[0_10px_20px_rgba(37,99,235,0.2)] transition-all flex items-center gap-2"
-            >
-              Download CV <span>↓</span>
-            </motion.button>
-          </a>
-          
           <motion.button 
             whileHover={{ scale: 1.05, y: -5 }}
             whileTap={{ scale: 0.95 }}

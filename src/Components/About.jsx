@@ -91,6 +91,18 @@ export default function About() {
                 contributing to full-stack applications and collaborative coding environments.
               </p>
             </div>
+{/* Frontend Developer at Kodu Technology */}
+<div className="relative pl-8 border-l-2 border-slate-300 mb-10">
+  <div className="absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1"></div>
+  <h2 className="text-2xl font-bold text-slate-800">Frontend Developer</h2>
+  <h3 className="text-slate-500 font-semibold mt-1">Kodu Technology, Remote</h3>
+  <p className="text-slate-500 text-sm mb-3 font-medium">Mar 2024 - Apr 2025</p>
+  <p className="text-slate-600 leading-relaxed text-lg">
+    Developed responsive, high‑performance front‑end interfaces for travel platforms.
+    Utilized React, Tailwind CSS, Framer Motion, and integrated multiple travel APIs.
+    Delivered UI components that improved booking conversion rates and user experience.
+  </p>
+</div>
           </motion.div>
 
           {/* Personal Bio */}

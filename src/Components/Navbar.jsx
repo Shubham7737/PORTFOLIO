@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
+import LOGO from "../../public/Images/LOGO.png"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center px-4 py-4">
         {/* Brand */}
         <div>
-          <h1 className="text-2xl font-extrabold text-blue-600 z-50">Shubham</h1>
+          <img src={LOGO} alt="Portfolio logo" className="h-10 w-auto object-contain" />
         </div>
 
         {/* Desktop Nav */}
